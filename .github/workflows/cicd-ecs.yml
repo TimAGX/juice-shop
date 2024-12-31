@@ -35,7 +35,7 @@ env:
   ECR_REPOSITORY: juiceshop         
   ECS_SERVICE: juice-shop-svc               
   ECS_CLUSTER: juiceshop-cluster765                
-  ECS_TASK_DEFINITION: arn:aws:ecs:us-east-1:626635420578:task-definition/juiceshop-td234:1
+  ECS_TASK_DEFINITION: .aws/juiceshop-td234.json  
   CONTAINER_NAME: juiceShop        
 
 permissions:
