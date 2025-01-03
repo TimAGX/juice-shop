@@ -64,6 +64,7 @@ config/*.yml
 
 # System Files
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 
 #terraform
@@ -102,3 +103,6 @@ h
 =======
 .DS_Store
 >>>>>>> refs/remotes/origin/master
+=======
+.DS_Store
+>>>>>>> 959f8e82e57503130a9837270b0109a370d0275d
