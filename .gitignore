@@ -64,3 +64,35 @@ config/*.yml
 
 # System Files
 .DS_Store
+
+#terraform
+# Local .terraform directories
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore .terraform.lock.hcl files
+.terraform.lock.hcl
+
+# Ignore plan files
+*.tfplan
+*.tfplan.*
+
+# Ignore sensitive files
+*.tfvars
+*.tfvars.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
