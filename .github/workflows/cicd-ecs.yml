@@ -9,7 +9,7 @@ env:
   ECR_REPOSITORY: juiceshop_repo         
   ECS_SERVICE: juiceshop-service             
   ECS_CLUSTER: my-ecs-cluster               
-  ECS_TASK_DEFINITION: juiceshop-task 
+  ECS_TASK_DEFINITION: .aws/juiceshop-task.json
   CONTAINER_NAME: juiceShop        
 
 permissions:
