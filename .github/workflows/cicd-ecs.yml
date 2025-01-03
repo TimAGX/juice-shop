@@ -9,7 +9,7 @@ env:
   ECR_REPOSITORY: juiceshop_repo         
   ECS_SERVICE: juiceshop-service             
   ECS_CLUSTER: my-ecs-cluster               
-  ECS_TASK_DEFINITION: .aws/juiceshop-td234.json  
+  ECS_TASK_DEFINITION: juiceshop-task 
   CONTAINER_NAME: juiceShop        
 
 permissions:
@@ -38,7 +38,6 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST }}
 
-    # Configure AWS credentials
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -46,12 +45,10 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
-    # Login to Amazon ECR
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    # Build, tag, and push image to Amazon ECR
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
