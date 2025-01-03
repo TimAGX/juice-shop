@@ -63,6 +63,7 @@ config/*.yml
 !config/oss.yml
 
 # System Files
+<<<<<<< HEAD
 .DS_Store
 
 #terraform
@@ -96,3 +97,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+=======
+.DS_Store
+>>>>>>> refs/remotes/origin/master
