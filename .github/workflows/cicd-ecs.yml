@@ -34,6 +34,7 @@ jobs:
           -Dsonar.projectKey=test
           -Dsonar.projectName=test
           -Dsonar.projectVersion=1.0
+          -X
       env:
         SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST }}
